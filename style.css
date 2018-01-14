@@ -1,0 +1,725 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+/*sizes*/
+
+h1 {
+  font-size: 5vh;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  color:#FFFFFF;
+  text-shadow: black 1px 0 5px;
+  text-decoration: underline;/*Heading font*/
+}
+
+h2 {
+  font-size: 3vh;
+  text-align: center;
+  font-family: 'Archivo Narrow', sans-serif;
+  color:#FFFFFF;
+  text-shadow: black 1px 0 5px;
+  text-decoration: underline;/*Content font*/
+}
+
+h3 {
+  font-size: 2vmin;
+  font-family: 'Arvo', serif;
+  color:#FFFFFF;
+  text-shadow: black 1px 0 5px;/*Content font*/
+}
+
+h4 {
+  text-align:center;
+  text-transform:uppercase;
+  font-size:15px;
+  font-weight:bold;
+  color:#FFFFFF;
+  border-bottom:1px solid silver;
+  padding-bottom:10px;
+  margin-bottom:10px;/*Content font*/
+}
+
+p {
+  font-size: 2vmin;/*Content font*/
+}
+
+html, body{
+  height: 100%;
+}
+
+body { 
+  background-image: url(https://static.pexels.com/photos/355887/pexels-photo-355887.jpeg) ;
+  background-position: center;
+  background-repeat:  no-repeat;
+  background-attachment: fixed;
+  background-size:  cover;
+} /*background image code*/
+
+
+/*Navigation Bars*/
+
+body{
+  margin:0;
+  padding:0;
+}
+
+.topnavigation{
+  list-style:none;
+  margin:0;
+  padding:0;
+  display:flex;
+  justify-content:flex-end;
+  flex-flow:row wrap;
+  background:#303F9F;
+  opacity:0.9;
+} /*Top Navigation box*/
+
+.topnavigation a{
+  text-decoration:none;
+  color:white;
+  text-shadow: black 1px 0 5px;
+  padding:1em; 
+  display:block; 
+  font-family:courier;
+  font-weight:bold;
+} /*Top Navigation Font Link*/
+
+.topnavigation a:hover{
+  background:rgba(0,0,0,.2);
+} /*Top Navigation Font hover*/
+
+@media all and (max-width:800px){
+  .topnavigation{
+    justify-content:space-around;
+  }
+} /*Mobile query for the top navigation box*/
+
+@media all and (max-width: 600px){
+  .topnavigation{
+    flex-flow:column wrap;
+  } /*Mobile query for the top navigation*/
+
+  .topnavigation a{
+    text-align:center;
+    border-top: 1px solid rgba(255,255,255,0.3); 
+    border-bottom: 1px solid rgba(0,0,0,0.1); 
+  }
+
+  .topnavigation li:last-of-type a{
+    border-bottom: none; 
+  }
+} /**/
+
+.bottomnavigation{
+  list-style:none;
+  margin:0;
+  padding:0;
+  display:flex;
+  justify-content:flex-end;
+  flex-flow:row wrap;
+  background:#3F51B5;
+  opacity:0.9;
+} /*Bottom Navigation box*/
+
+.bottomnavigation a{
+  text-decoration:none;
+  color:white;
+  text-shadow: black 1px 0 5px;
+  padding:1em; 
+  display:block; 
+  font-family:courier;
+  font-weight:bold;
+} /*Bottom Navigation Font Link*/
+
+@media all and (max-width:800px){
+  .bottomnavigation{
+    justify-content:space-around;
+  }
+} /*Mobile query for the bottom navigation*/
+
+@media all and (max-width: 600px){
+  .bottomnavigation{
+    flex-flow:column wrap;
+  } /*Mobile query for the bottom navigation*/
+
+  .bottomnavigation a{
+    text-align:center;
+    border-top: 1px solid rgba(255,255,255,0.3); 
+    border-bottom: 1px solid rgba(0,0,0,0.1); 
+  } /**/
+
+  .bottomnavigation li:last-of-type a{
+    border-bottom: none; 
+  }
+} /**/
+
+
+a:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background-color: whitesmoke;
+  width: 0;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  transform: translateX(-50%);
+  transform: translateX(-50%);
+  transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+  transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+} /*The function for hovering over the links*/
+
+a:hover {
+  color: whitesmoke;
+  letter-spacing: 2px;
+} /*Spaces the letters out when hovering over links*/
+
+a:hover:after {
+  width: 100%;
+} /*The width of the line shows when hovering over the link*/
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  position: relative;
+  transition: all 0.4s ease;
+} /*the width, the letter spacing show when hovering over the links*/
+
+
+#heading {
+  background-color:#C5CAE9;
+  padding:10px;
+  text-align: center;
+  word-wrap: break-word;
+  text-decoration: underline;
+}/*Heading box*/
+
+#header {
+  margin-top: 3px;
+  min-height: 70px;
+  margin-left: 0.6%;
+  margin-right: 0.3%;
+  background-color:#212121;
+  word-wrap: break-word;
+  padding:5px;
+}/*Header box*/
+
+
+#header1 {
+  text-align: center;
+  margin-top: 3px;
+  min-height: 70px;
+  margin-left: 0.6%;
+  margin-right: 0.3%;
+  word-wrap: break-word;
+  padding:5px;
+  background-color:#757575;
+}/*Header box 1*/
+
+
+#header2 {
+  text-align: center;
+  margin-top: 3px;
+  min-height: 70px;
+  margin-left: 0.6%;
+  margin-right: 0.3%;
+  word-wrap: break-word;
+  padding:5px;
+  background-color:#212121;
+}/*Header box 2*/
+
+
+#header3 {
+  text-align: center;
+  margin-top: 3px;
+  min-height: 70px;
+  margin-left: 0.6%;
+  margin-right: 0.3%;
+  word-wrap: break-word;
+  padding:5px;
+  background-color:#757575;
+}/*Header box 3*/
+
+
+#header4 {
+  text-align: center;
+  margin-top: 3px;
+  min-height: 70px;
+  margin-left: 0.6%;
+  margin-right: 0.3%;
+  word-wrap: break-word;
+  padding:5px;
+  background-color:#212121;
+}/*Header box 4*/
+
+
+#header5 {
+  text-align: center;
+  margin-top: 3px;
+  min-height: 70px;
+  margin-left: 0.6%;
+  margin-right: 0.3%;
+  word-wrap: break-word;
+  padding:5px;
+  background-color:#757575;
+}/*Header box 5*/
+
+
+#header6 {
+  text-align: center;
+  margin-top: 3px;
+  min-height: 70px;
+  margin-left: 0.6%;
+  margin-right: 0.3%;
+  word-wrap: break-word;
+  padding:5px;
+  background-color:#212121;
+}/*Header box 6*/
+
+
+#header7 {
+  text-align: center;
+  margin-top: 3px;
+  min-height: 70px;
+  margin-left: 0.6%;
+  margin-right: 0.3%;
+  word-wrap: break-word;
+  padding:5px;
+  background-color:#757575;
+}/*Header box 7*/
+
+#header8 {
+  text-align: center;
+  margin-top: 3px;
+  min-height: 70px;
+  margin-left: 0.6%;
+  margin-right: 0.3%;
+  word-wrap: break-word;
+  padding:5px;
+  background-color:#212121;
+}/*Header box 8*/
+
+#header9 {
+  text-align: center;
+  margin-top: 3px;
+  min-height: 70px;
+  margin-left: 0.6%;
+  margin-right: 0.3%;
+  word-wrap: break-word;
+  padding:5px;
+  background-color:#757575;
+}/*Header box 9*/
+
+#header10 {
+  text-align: center;
+  margin-top: 3px;
+  min-height: 70px;
+  margin-left: 0.6%;
+  margin-right: 0.3%;
+  word-wrap: break-word;
+  padding:5px;
+  background-color:#212121;
+}/*Header box 10*/
+
+
+#header11 {
+  text-align: center;
+  margin-top: 3px;
+  min-height: 70px;
+  margin-left: 0.6%;
+  margin-right: 0.3%;
+  word-wrap: break-word;
+  padding:5px;
+  background-color:#757575;
+}/*Header box 11*/
+
+
+#header12 {
+  text-align: center;
+  margin-top: 3px;
+  min-height: 70px;
+  margin-left: 0.6%;
+  margin-right: 0.3%;
+  word-wrap: break-word;
+  padding:5px;
+  background-color:#212121;
+}/*Header box 12*/
+
+
+#header13 {
+  text-align: center;
+  margin-top: 3px;
+  min-height: 70px;
+  margin-left: 0.6%;
+  margin-right: 0.3%;
+  word-wrap: break-word;
+  padding:5px;
+  background-color:#757575;
+}/*Header box 13*/
+
+
+#header14 {
+  text-align: center;
+  margin-top: 3px;
+  min-height: 70px;
+  margin-left: 0.6%;
+  margin-right: 0.3%;
+  word-wrap: break-word;
+  padding:5px;
+  background-color:#212121;
+}/*Header box 14*/
+
+
+#header15 {
+  text-align: center;
+  margin-top: 3px;
+  min-height: 70px;
+  margin-left: 0.6%;
+  margin-right: 0.3%;
+  word-wrap: break-word;
+  padding:5px;
+  background-color:#757575;
+}/*Header box 15*/
+
+
+#header16 {
+  text-align: center;
+  margin-top: 3px;
+  min-height: 70px;
+  margin-left: 0.6%;
+  margin-right: 0.3%;
+  word-wrap: break-word;
+  padding:5px;
+  background-color:#212121;
+}/*Header box 16*/
+
+
+#header17 {
+  text-align: center;
+  margin-top: 3px;
+  min-height: 70px;
+  margin-left: 0.6%;
+  margin-right: 0.3%;
+  word-wrap: break-word;
+  padding:5px;
+  background-color:#757575;
+}/*Header box 17*/
+
+
+#header18 {
+  text-align: center;
+  margin-top: 3px;
+  min-height: 70px;
+  margin-left: 0.6%;
+  margin-right: 0.3%;
+  word-wrap: break-word;
+  padding:5px;
+  background-color:#212121;
+}/*Header box 18*/
+
+
+#header19 {
+  text-align: center;
+  margin-top: 3px;
+  min-height: 70px;
+  margin-left: 0.6%;
+  margin-right: 0.3%;
+  word-wrap: break-word;
+  padding:5px;
+  background-color:#757575;
+}/*Header box 19*/
+
+
+#header20 {
+  text-align: center;
+  margin-top: 3px;
+  min-height: 70px;
+  margin-left: 0.6%;
+  margin-right: 0.3%;
+  word-wrap: break-word;
+  padding:5px;
+  background-color:#212121;
+}/*Header box 20*/
+
+
+#header21 {
+  text-align: center;
+  margin-top: 3px;
+  min-height: 70px;
+  margin-left: 0.6%;
+  margin-right: 0.3%;
+  word-wrap: break-word;
+  padding:5px;
+  background-color:#757575;
+}/*Header box 21*/
+
+
+header {
+  flex-flow: row wrap;
+  display: box;
+  display:flex;
+  margin-left: 0.6%;
+}/*For containing the images*/
+
+header {
+  padding:0;
+}/*padding the images between each other*/
+
+header div {
+  flex: auto;
+  width: 200px;
+  margin: .1vw;
+  /*aligns the images with the container*/
+}
+
+header div img {
+  width: 100%;
+  height: auto;
+  /*the size of the container and images*/
+}
+    
+@media only screen and (max-width:500px) {image div {
+      margin:0;
+      }/*media query for the images*/
+
+  
+/*footer*/  
+
+  @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400);
+}
+
+  .footer #button{
+    width:35px;
+    height:35px;
+    border: white 12px solid;
+    border-radius:35px;
+    margin:0 auto;
+    position:relative;
+    transition: all 1s ease;
+    transition: all 1s ease;
+    transition: all 1s ease;
+    transition: all 1s ease;
+    transition: all 1s ease;
+  }
+
+/*the footer button which appears at the bottom of the screen*/
+
+  .footer #button:hover{
+    width:35px;
+    height:35px;
+    border: #3A3A3A 12px solid;
+    transition: all 1s ease;
+    transition: all 1s ease;
+    transition: all 1s ease;
+    transition: all 1s ease;
+    transition: all 1s ease;
+    position:relative;
+  }
+/*the footer button which shows the rest of it when hovering over*/
+ 
+  .footer {
+    bottom:0;
+    left:0;
+    position:fixed;
+    width: 100%;
+    height: 2em;
+    overflow:hidden;
+    margin:0 auto;
+    transition: all 1s ease;
+    transition: all 1s ease;
+    transition: all 1s ease;
+    transition: all 1s ease;
+    transition: all 1s ease;
+    z-index:999;
+  }
+
+/*the footer button animation when it slowly drops down when its not being hovered over*/
+ 
+.footer:hover {
+    transition: all 1s ease;
+    transition: all 1s ease;
+    transition: all 1s ease;
+    transition: all 1s ease;
+    transition: all 1s ease;
+    height: 10em;
+  }
+
+/*allows the footer to appear when hovering over the button and animates the speed of it*/
+  
+.footer #container1{
+    margin-top:5px;
+    width:100%;
+    height:100%;
+    position:relative;
+    top:0;
+    left:0;
+    background: #303F9F;
+  }
+
+/*the footer container which surrounds the footer*/
+  
+.footer #cont{
+    position:relative;
+    top:-45px;
+    right:190px;
+    width:150px;
+    height:auto;
+    margin:0 auto;
+  }
+
+/*positions the font in the footer*/
+  
+.footer_center{
+    width:500px;
+    float:left;
+    text-align:center;
+  }
+/*centers the font in the middle of the footer*/
+  
+.footer h3{
+    text-align: center;
+    font-size: 11px;
+    font-weight: 100;
+    margin-top:70px;
+    margin-left:40px;
+  }
+
+/*the font size in the footer and aligns it within the container */
+
+.btn_acele {
+  position: relative;
+  z-index: 1;
+  padding: 15px 50px;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing:2px; 
+}
+
+/*the animation speed when hovering over the buttons*/
+
+.btn_acele::after {
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  width: 0;
+  top: 0;
+  left: 10;
+  transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  transition: all 0.3s ease; 
+}
+
+/*the animation speed after hovering over the buttons*/
+
+
+.btn_black {
+  background: #111;
+  color: #fff; 
+}
+
+/*the background of the button*/
+
+.btn_black::after {
+  background: #303F9F; 
+}
+
+/*the colour shows when the button has been hovered over*/
+
+input[type=text], select, textarea {
+  text-align: center;
+  font-family: 'Arvo', serif;
+  color:#212121;
+  width:100%; 
+  padding: 20px; 
+  border: 1px solid #ccc; 
+  box-sizing: border-box; 
+  margin-top: 10px; 
+  margin-bottom: 15px;
+}
+
+/*the footer button which shows the rest of it when hovering over*/
+
+input[type=submit] {
+  font-family: 'Arvo', serif;
+  font-size: 18px;
+  color:whitesmoke;
+  text-shadow: black 1px 0 5px;
+  background-color: black;
+  color: white;
+  padding: 20px 40px;
+  border: none;
+  cursor: pointer;
+}
+
+/*the footer button which shows the rest of it when hovering over*/
+
+input[type=submit]:hover {
+  background-color: #4573D5;
+}
+
+/*the footer button which shows the rest of it when hovering over*/
+
+#container {
+  text-align: center;
+  color: #FFFFFF; 
+  margin-top: 3px;
+  margin-left: 0.6%;
+  margin-right: 0.3%;
+  padding: 20px;
+  background-color:#303F9F;
+  opacity:0.9;
+}
+
+/*the main container that contains the boxes within the website*/
+
+.container {
+  text-align: center;
+  color: #FFFFFF; 
+  margin-top: 3px;
+  margin-left: 0.6%;
+  margin-right: 0.3%;
+  padding: 20px;
+  background-color:#212121;
+  opacity:0.9;
+}
+
+/*the footer button which shows the rest of it when hovering over*/
+ 
+video { 
+  width:100%;
+  max-width:800px;
+  height:auto;
+  background: black;
+  display: block;
+  margin: 0 auto;
+} 
+/*Video code*/
+
+
+
+.flexbox {
+  display: flex;
+  display: flex;
+  display: flex;
+  background-color:#757575;
+  margin-top: 0.5%;
+  margin-left:0.5%;
+  margin-right:0.5%;
+  
+}/*Contains the flexboxes*/
+
+.flexbox > div {
+  width: 50%;
+  padding: 3px;
+}/*aligns the boxes*/
+
+
+
+
+
